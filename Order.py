@@ -58,9 +58,9 @@ conn = sqlite3.connect('test.db')
 cursor = conn.cursor()
 
 # Read the name column
-cursor.execute('DROP TABLE users')
+# cursor.execute('DROP TABLE users')
 
-cursor.execute('CREATE TABLE users (name TEXT)')
+# cursor.execute('CREATE TABLE users (name TEXT)')
 cursor.execute('SELECT name FROM users')
 
 results = cursor.fetchall()
